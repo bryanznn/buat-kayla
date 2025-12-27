@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kayla: My Beautiful Soul</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <h1>Untuk Kaylaa.. ❤️</h1>
+            <p>Ada yang mau gue sampaiin buat u yang selalu bilang dirinya jutek, tapi hatinya manis banget.</p>
+        </section>
+
+        <section class="content">
+            <div class="photo-frame">
+                <img src="https://via.placeholder.com/400x400?text=Foto+Terbaik+Kayla" alt="Kayla: My Beautiful Soul">
+            </div>
+            <div class="message">
+                <h2>To The Most Beautiful Soul</h2>
+                <p>Kay, gue tau u pernah merasa kurang percaya diri tanpa makeup.</p>
+                <p>Tapi jujur, di mata gue, u tetep yang paling manis, mau gimana pun kondisinya. Makeup itu cuma hiasan, tapi kejujuran dan semua cerita u itu yang nggak bisa digantiin apa pun.</p>
+                <p>Gue bukan cuma kagum sama apa yang kelihatan dari luar. Gue kagum sama cara u berpikir, cara u peduli, dan semua hal kecil tentang u yang apa adanya. Buat gue, u itu udah lebih dari cukup. U nggak perlu sempurna, karena kehadiran u aja udah bikin gue nyaman.</p>
+                <p>Gue pengen u tau, di mata gue, u selalu punya tempat yang spesial. Dan gue pengen jadi orang yang bisa selalu kasih u rasa <strong>tenang dan aman</strong>, hari ini dan seterusnya.</p>
+            </div>
+        </section>
+
+        <section class="proposal">
+            <h2>Jadi, mau nggak temenin gue buat jalanin 2026 bareng-bareng?</h2>
+            <p>Biar gue bisa buktiin kalau gue bisa jadi cowok yang selalu bikin u tersenyum dan ngerasa aman.</p>
+            
+            <div class="buttons">
+                <button onclick="showAlert('I knew it! Kabarin gue di WA ya Kay ❤️')">Iya, Aku Mau</button>
+                <button id="no-btn" onmouseover="moveButton()">G</button>
+            </div>
+        </section>
+        
+        <section class="footer-quote">
+            <p>"U nggak perlu jadi orang lain buat disukai, karena buat gue, versi u yang paling jujur adalah yang paling indah."</p>
+        </section>
+    </div>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="link-lagu-kamu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    background-color: #fdf6f0; /* Warna cream lembut/warm beige */
+    font-family: 'Poppins', sans-serif; /* Font modern dan nyaman */
+    color: #5d5d5d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mengatur agar konten mulai dari atas */
+    min-height: 100vh; /* Memastikan background menutupi seluruh tinggi halaman */
+    overflow-x: hidden; /* Mencegah scroll horizontal yang tidak diinginkan */
+}
+
+.container {
+    max-width: 450px; /* Ukuran yang nyaman untuk mobile */
+    padding: 25px;
+    text-align: center;
+    background-color: #ffffff; /* Latar belakang putih untuk kontras */
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); /* Shadow lembut */
+    margin: 40px auto; /* Margin atas bawah dan tengah otomatis */
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif; /* Font elegan untuk judul */
+    color: #d4a373; /* Warna rose gold/hangat */
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+.header p {
+    font-size: 1em;
+    color: #7b7b7b;
+    margin-bottom: 30px;
+}
+
+.photo-frame {
+    margin: 30px 0;
+}
+
+.photo-frame img {
+    width: 90%; /* Ukuran gambar relatif */
+    max-width: 300px; /* Batasan ukuran gambar */
+    border-radius: 50%; /* Membuat foto bulat */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    border: 4px solid #d4a373; /* Border warna romantis */
+    object-fit: cover; /* Memastikan gambar pas tanpa terdistorsi */
+    height: 300px;
+}
+
+.message {
+    text-align: left;
+    margin-top: 30px;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+.message h2 {
+    font-family: 'Playfair Display', serif;
+    color: #d4a373;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.message p strong {
+    color: #c08c62; /* Warna lebih gelap untuk penekanan */
+}
+
+.proposal {
+    background: #faedcd; /* Warna pastel kuning lembut */
+    padding: 25px;
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.proposal h2 {
+    font-family: 'Playfair Display', serif;
+    color: #c08c62;
+    margin-bottom: 15px;
+    font-size: 1.9em;
+}
+
+.proposal p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Tombol vertikal untuk mobile */
+    align-items: center;
+    gap: 15px; /* Jarak antar tombol */
+}
+
+.buttons button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease; /* Efek transisi halus */
+    width: 80%; /* Lebar tombol relatif */
+    max-width: 250px;
+}
+
+button:first-child {
+    background-color: #d4a373;
+    color: white;
+    box-shadow: 0 4px 15px rgba(212, 163, 115, 0.4);
+}
+
+button:first-child:hover {
+    background-color: #c08c62;
+    transform: translateY(-2px);
+}
+
+#no-btn {
+    background-color: #e9edc9; /* Warna hijau muda pastel */
+    color: #6d6d6d;
+    position: relative; /* Penting untuk tombol lari */
+    z-index: 10; /* Pastikan tombol di atas elemen lain */
+}
+
+#no-btn:hover {
+    background-color: #dbe0b5;
+    transform: translateY(-2px);
+}
+
+.footer-quote {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px dashed #e0e0e0;
+    font-style: italic;
+    color: #888888;
+    font-size: 0.95em;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .header h1 {
+        font-size: 1.8em;
+    }
+    .message h2, .proposal h2 {
+        font-size: 1.5em;
+    }
+    .photo-frame img {
+        width: 80%;
+        height: 250px;
+    }
+    .buttons button {
+        width: 90%;
+    }
+}
+function moveButton() {
+    const btn = document.getElementById('no-btn');
+    // Hanya berlaku jika lebar layar lebih besar dari 600px (untuk desktop)
+    // Agar tombol tidak lari terlalu jauh di HP
+    if (window.innerWidth > 600) {
+        const x = Math.random() * (window.innerWidth * 0.4 - btn.offsetWidth); // Batasi pergerakan di area tertentu
+        const y = Math.random() * (window.innerHeight * 0.4 - btn.offsetHeight);
+        
+        btn.style.position = 'absolute';
+        btn.style.left = `${x}px`;
+        btn.style.top = `${y}px`;
+    }
+}
+
+function showAlert(message) {
+    alert(message);
+    // Optional: Bisa redirect ke halaman "terima kasih" atau menampilkan modal
+}
+
+// Untuk memastikan musik otomatis bermain (beberapa browser butuh user interaksi dulu)
+window.onload = function() {
+    const music = document.getElementById('bgMusic');
+    if (music) {
+        music.play().catch(error => {
+            console.log("Autoplay was prevented:", error);
+            // Anda bisa tambahkan tombol "putar musik" jika autoplay gagal
+        });
+    }
+};
